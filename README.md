@@ -6,10 +6,7 @@
 ```
 pip install pygame
 ```
-2. MySQL connctor for python installed 
-```
-pip install mysql-connector-python
-```
+
 
 ## SUMMARY:
 This program simulates two balls (red and blue) racing against each other with 
