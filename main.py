@@ -52,7 +52,7 @@ while run:
 
         while (y1 >= 45) and (y2 >= 45):
             if pressed: 
-                v1, v2 = random.randrange(10, 31), random.randrange(10, 31)
+                v1, v2 = random.randrange(10, 31), random.randrange(10, 31)# giving random speeds at every step
 
             y1 -= v1
             y2 -= v2
