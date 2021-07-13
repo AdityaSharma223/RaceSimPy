@@ -53,6 +53,7 @@ while run:
         while (y1 >= 45) and (y2 >= 45):
             if pressed: 
                 v1, v2 = random.randrange(10, 31), random.randrange(10, 31)
+
             y1 -= v1
             y2 -= v2
             window.fill((0,0,0))
