@@ -9,6 +9,7 @@ import time
 swidth, sheight = 500, 500 
 run = True
 r, b = 0, 0
+pressed = False 
 #--------------------------------------
 
 #--------------PYGAME INITIALISATION------------------
@@ -43,11 +44,15 @@ while run:
             run = False 
 
     if keys[pygame.K_SPACE]: # (if space is pressed)
+        pressed = True 
         pygame.draw.circle(window, (255, 0, 0), (x1, y1), 20)
         pygame.draw.circle(window, (0, 0, 255), (x2, y2), 20)
         v1, v2 = random.randrange(10, 31), random.randrange(10, 31)
         
+
         while (y1 >= 45) and (y2 >= 45):
+            if pressed: 
+                v1, v2 = random.randrange(10, 31), random.randrange(10, 31)
             y1 -= v1
             y2 -= v2
             window.fill((0,0,0))
